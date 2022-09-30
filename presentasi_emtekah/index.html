@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kelompok 2</title>
+</head>
+<body id="body">
+    <canvas id="game"></canvas>
+    <script src="game.js"></script>
+
+    <div class="content">
+        <img src="./images/text/bab_1/1_1_content.png" id="content1_1" style="display:none;"/>
+        <img src="./images/text/bab_1/1_2_content.png" id="content1_2" style="display:none;"/>
+        <img src="./images/text/bab_2/2_2_content.png" id="content2_2" style="display:none;"/>
+        <img src="./images/text/bab_2/2_3_content.png" id="content2_3" style="display:none;"/>
+        <img src="./images/text/bab_3/3_content.png" id="content3" style="display:none;"/>
+    </div>
+    
+    <img src="./images/next.png" id="bab5" class="next" onclick="location.reload()" style="display:none;"/>
+    <div id="bab4_1" style="display: none;">
+        <img src="./images/text/bab_4/4_1_a.png" class="jawaban" onclick="
+        changeBGto4_2()
+        changePage(bab4_1, bab4_2)"/>
+        <img src="./images/text/bab_4/4_1_b.png" class="jawaban" onclick="
+        window.alert('Jawaban Anda Salah!')"/>
+    </div>
+    <div id="bab4_2" style="display: none;">
+        <img src="./images/text/bab_4/4_2_a.png" class="jawaban" onclick="location.reload()"/>
+        <img src="./images/text/bab_4/4_2_b.png" class="jawaban" onclick="
+        window.alert('Jawaban Anda Salah!')"/>
+    </div>
+    
+    <div class="contents">
+
+        <div id="daftar_isi">
+            <p id="content0" style="display:none;"></p>
+            <p id="content2_1" style="display:none;"></p>
+            <img id="sub1" src="./images/text/daftar_isi/1.png" onclick="
+            changePage(daftar_isi, bab1_1);
+            changeContent(content0, content1_1)"/>
+            <img id="sub2" src="./images/text/daftar_isi/2.png" onclick="
+            changePage(daftar_isi, bab2_1);
+            changeContent(content0, content2_1)"/>
+            <img id="sub3" src="./images/text/daftar_isi/3.png" onclick="
+            changePage(daftar_isi, bab3);
+            changeContent(content0, content3)"/>
+            <img id="sub4" src="./images/text/daftar_isi/4.png" onclick="
+            changeBGto4_1()
+            changePage(daftar_isi, bab4_1)"/>
+            <img id="sub5" src="./images/text/daftar_isi/5.png" onclick="
+            changeBGto5();
+            changePage(daftar_isi, bab5)"/>
+        </div>
+
+        <div class="bab">
+            <div id="bab1_1" style="display:none;">
+                <img src="./images/text/bab_1/1_1.png"/>
+                <img src="./images/next.png" class="next" onclick="
+                changePage(bab1_1, bab1_2);
+                changeContent(content1_1, content1_2)"/>
+            </div>
+
+            <div id="bab1_2" style="display: none;">
+                <img src="./images/text/bab_1/1_2.png"/>
+                <img src="./images/next.png" class="next" onclick="
+                changePage(bab1_2, bab1_3)"/>
+            </div>
+
+            <div id="bab1_3" style="display: none;">
+                <img src="./images/text/bab_1/1_3.png"/>
+                <img src="./images/next.png" class="next" onclick="location.reload()"/>
+            </div>
+
+            <div id="bab2_1" style="display: none;">
+                <img src="./images/text/bab_2/2_1.png"/>
+                <img src="./images/next.png" class="next" onclick="
+                changePage(bab2_1, bab2_2);
+                changeContent(content2_1, content2_2)"/>
+            </div>
+
+            <div id="bab2_2" style="display: none;">
+                <img src="./images/text/bab_2/2_2.png"/>
+                <img src="./images/next.png" class="next" onclick="
+                changePage(bab2_2, bab2_3);
+                changeContent(content2_2, content2_3)"/>
+            </div>
+
+            <div id="bab2_3" style="display: none;">
+                <img src="./images/text/bab_2/2_3.png"/>
+                <img src="./images/next.png" class="next" onclick="location.reload()"/>
+            </div>
+
+            <div id="bab3" style="display: none;">
+                <img src="./images/text/bab_3/3.png"/>
+                <img src="./images/next.png" class="next" onclick="location.reload()"/>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

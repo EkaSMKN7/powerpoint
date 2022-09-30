@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    background-image: url(./images/mtk_bg_hd.png);
+    background-size: 100%;
+}
+
+.content{
+  position: absolute;
+  scale: 75%;
+
+  top: 23%;
+  right: 17.5%;
+}
+
+canvas{
+  position: absolute;
+}
+
+#content2_3{
+  scale: 80%;
+}
+
+.next{
+  position: absolute;
+  scale: 20%;
+  top: 50%;
+  right: 45%;
+
+  width: 100%;
+  height: auto;
+
+  opacity: 50%;
+}
+
+.next:hover{
+  opacity: 100%;
+}
+
+.contents{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 15%;
+
+    height: 25em;
+}
+
+.jawaban{
+  margin-top: 40%;
+  margin-left: 20%;
+
+  opacity: 75%;
+}
+
+.jawaban:hover{
+  opacity: 100%;
+}
+
+.unfade{
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.fade {
+	animation: fadeOut 2s;
+    -webkit-animation: fadeOut 2s;
+    -moz-animation: fadeOut 2s;
+    -o-animation: fadeOut 2s;
+    -ms-animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-moz-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-webkit-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-o-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @-ms-keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+#daftar_isi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+
+    width: 100%;
+
+    margin-right: 50%;
+}
+
+#sub1, #sub2, #sub3, #sub4, #sub5{
+    opacity: 75%;
+}
+
+#sub1:hover, #sub2:hover, #sub3:hover, #sub4:hover, #sub5:hover{
+    opacity: 100%;
+}
+
+#bab5{
+  scale: 10%;
+  left: 20%;
+  top: -10%;
+}
